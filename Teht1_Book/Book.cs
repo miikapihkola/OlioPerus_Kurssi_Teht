@@ -16,18 +16,18 @@ namespace Teht1_Book
         public double price;
 
         // Constructor
-        public Book()
+        public Book(string title, string author, string id, double price)
         {
-            this.title = string.Empty;
-            this.author = string.Empty;
+            this.title = title;
+            this.author = author;
             SetId(id);
-            this.price = 0;
+            this.price = price;
         }
 
         // Method
         private void SetId(object id)
         {
-            throw new NotImplementedException();
+            
         }        
     }
 }
