@@ -5,8 +5,9 @@
         static void Main(string[] args)
         {
             winSize();
-            int idCounter = 0;
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            int idCounter = 0;            
 
             // ## ALTERNATIVE ## IF no overload
             // Book book1 = new Book();
@@ -29,12 +30,16 @@
             printMoreExpensiveBook(book1, book2);
             printMoreExpensiveBook(book2, book3);
             printMoreExpensiveBook(book3, book1);
+
+            
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
         public static void printBookInfo(Book book)
         {
-            Console.WriteLine("  Title:\t{0}\n  Author:\t{1}\n  Price:\t{2}\n  Inventory Id:\t{3}\n", book.title, book.author, book.price, book.id);
+            Console.WriteLine("  Title:\t{0}\n  Author:\t{1}\n  Price:\t{2} €\n  Inventory Id:\t{3}\n", book.title, book.author, book.price, book.id);
         }
         public static void printMoreExpensiveBook(Book book1, Book book2)
         {
@@ -47,7 +52,7 @@
         private static void winSize()
         {           
             try { Console.SetWindowSize(75, 50); }
-            catch { Console.WriteLine("\nCould not automatically resize console window.\n\nPress [Enter] to continue."); Console.ReadLine(); Console.Clear(); }
+            catch { Console.WriteLine("\nCould not automatically resize console window.\n\nPress any key to continue..."); Console.ReadLine(); Console.Clear(); }
         }
 #pragma warning restore CA1416 // Validate platform compatibility
     }
