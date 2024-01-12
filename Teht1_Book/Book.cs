@@ -16,26 +16,26 @@ namespace Teht1_Book
         public double price;
 
         // Constructor
+#pragma warning disable CS8618
         public Book(string title, string author, int idCounter, double price)
+#pragma warning restore CS8618
         {
             this.title = title;
             this.author = author;
-            id = SetId(idCounter);
+            SetId(idCounter);
             this.price = price;
         }
 
         // Methods
-        public string SetId(int idCounter)
+        public void SetId(int idCounter)
         {
-            string id = Convert.ToString(idCounter);
+            id = Convert.ToString(idCounter);
 
             if (id.Length < 5)             
                 while (id.Length < 5) id = "0" + id; 
             
             else if (id.Length > 5) 
                 id = "XXXXX";
-            
-            return id;
         }
         public string compareBookPrices(Book book)
         {
