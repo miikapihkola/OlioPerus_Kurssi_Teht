@@ -16,9 +16,9 @@
             // book1.price = 24.99;
 
             // Create books
-            Book book1 = new Book("Book_A", "Auth_1", idCounter++, 24.99);
-            Book book2 = new Book("Book_B", "Auth_2", idCounter++, 49.99);
-            Book book3 = new Book("Book_C", "Auth_1", idCounter++, 19.99);
+            Book book1 = new("Book_A", "Auth_1", idCounter++, 24.99);
+            Book book2 = new("Book_B", "Auth_2", idCounter++, 49.99);
+            Book book3 = new("Book_C", "Auth_1", idCounter++, 19.99);
 
             // Retrieve info
             Console.WriteLine();
