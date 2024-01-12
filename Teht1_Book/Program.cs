@@ -1,11 +1,11 @@
-﻿namespace Teht1_Book
+﻿using MyPersonalAdditions;
+namespace Teht1_Book
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            winSize();
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            PersonalFuncs.startFunc();
 
             int idCounter = 0;            
 
@@ -32,8 +32,7 @@
             printMoreExpensiveBook(book3, book1);
 
             
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+            PersonalFuncs.endFunc();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
@@ -46,14 +45,5 @@
             Console.WriteLine("  Comparing following books | {0} || {1} |", book1.title, book2.title);
             Console.WriteLine("  {0}\n", book1.compareBookPrices(book2));
         }
-
-#pragma warning disable CA1416 // Validate platform compatibility 
-        // Miksihä tää pätkä nyt vaati ton "static". Aikasemmissa koodeissa toiminu ongelmitta.
-        private static void winSize()
-        {           
-            try { Console.SetWindowSize(75, 50); }
-            catch { Console.WriteLine("\nCould not automatically resize console window.\n\nPress any key to continue..."); Console.ReadLine(); Console.Clear(); }
-        }
-#pragma warning restore CA1416 // Validate platform compatibility
     }
 }

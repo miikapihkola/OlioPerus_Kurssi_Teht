@@ -1,11 +1,11 @@
-﻿namespace Teht2_Car
+﻿using MyPersonalAdditions;
+namespace Teht2_Car
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            winSize();
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            PersonalFuncs.startFunc();
 
             // Create cars
             Car car1 = new();
@@ -36,8 +36,7 @@
             car2.ShowCarInfo();
 
 
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
+            PersonalFuncs.endFunc();
         }
         public static double askSpeedDif(string brand)
         {
@@ -49,12 +48,5 @@
             }
             return speedDif;
         }
-#pragma warning disable CA1416 // Validate platform compatibility 
-        private static void winSize()
-        {
-            try { Console.SetWindowSize(75, 50); }
-            catch { Console.WriteLine("\nCould not automatically resize console window.\n\nPress any key to continue..."); Console.ReadLine(); Console.Clear(); }
-        }
-#pragma warning restore CA1416 // Validate platform compatibility
     }
 }
