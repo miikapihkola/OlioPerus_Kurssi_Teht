@@ -15,11 +15,12 @@
                 // Settings -> System -> For Developers -> Terminal -> Windows Console Host
                 // Asetukset -> Järjestelmä -> Kehittäjille -> Pääte -> Windows-konsolin isäntä
                 // However even if this does not work, this does not trigger exception when using Windows Terminal.
-                Console.SetWindowSize(75, 50);                
+                Console.SetWindowSize(75, 50);
             }
             catch (PlatformNotSupportedException) { Console.WriteLine("\nCould not automatically resize console window.\nPlatformNotSupportedException\n\nPress any key to continue..."); Console.ReadLine(); Console.Clear(); }
             catch { Console.WriteLine("\nCould not automatically resize console window.\n\nPress any key to continue..."); Console.ReadLine(); Console.Clear(); }
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine();
         }
         public static void endFunc()
         {

@@ -21,7 +21,6 @@ namespace Teht1_Book
             Book book3 = new("Book_C", "Auth_1", idCounter++, 19.99);
 
             // Retrieve info
-            Console.WriteLine();
             printBookInfo(book1);
             printBookInfo(book2);
             printBookInfo(book3);
