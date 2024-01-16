@@ -21,8 +21,8 @@ namespace Teht2_Car
 
             // Accelerate
             Console.WriteLine();
-            car1.Accelerate(askSpeedDif(car1.brand));
-            car2.Accelerate(askSpeedDif(car2.brand));
+            car1.Accelerate(AskSpeedDif(car1.brand));
+            car2.Accelerate(AskSpeedDif(car2.brand));
             Console.WriteLine("  Updated Car Info:");
             car1.ShowCarInfo();
             car2.ShowCarInfo();
@@ -38,7 +38,7 @@ namespace Teht2_Car
 
             PersonalFuncs.EndFunc();
         }
-        public static double askSpeedDif(string brand)
+        public static double AskSpeedDif(string brand)
         {
             double speedDif = 0;
             Console.WriteLine($"  Input how much faster '{brand}' is driving.");

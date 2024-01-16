@@ -21,25 +21,25 @@ namespace Teht1_Book
             Book book3 = new("Book_C", "Auth_1", idCounter++, 19.99);
 
             // Retrieve info
-            printBookInfo(book1);
-            printBookInfo(book2);
-            printBookInfo(book3);
+            PrintBookInfo(book1);
+            PrintBookInfo(book2);
+            PrintBookInfo(book3);
 
             // Price Comparison
-            printMoreExpensiveBook(book1, book2);
-            printMoreExpensiveBook(book2, book3);
-            printMoreExpensiveBook(book3, book1);
+            PrintMoreExpensiveBook(book1, book2);
+            PrintMoreExpensiveBook(book2, book3);
+            PrintMoreExpensiveBook(book3, book1);
 
             
             PersonalFuncs.EndFunc();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
-        public static void printBookInfo(Book book)
+        public static void PrintBookInfo(Book book)
         {
             Console.WriteLine("  Title:\t{0}\n  Author:\t{1}\n  Price:\t{2} €\n  Inventory Id:\t{3}\n", book.title, book.author, book.price, book.id);
         }
-        public static void printMoreExpensiveBook(Book book1, Book book2)
+        public static void PrintMoreExpensiveBook(Book book1, Book book2)
         {
             Console.WriteLine("  Comparing following books | {0} || {1} |", book1.title, book2.title);
             Console.WriteLine("  {0}\n", book1.CompareBookPrices(book2));

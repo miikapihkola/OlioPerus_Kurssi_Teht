@@ -16,9 +16,7 @@ namespace Teht1_Book
         public double price;
 
         // Constructor
-#pragma warning disable CS8618
         public Book(string title, string author, int idCounter, double price)
-#pragma warning restore CS8618
         {
             this.title = title;
             this.author = author;

@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht4_Book2", "Teht4_Book2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht5_Author", "Teht5_Author\Teht5_Author.csproj", "{568E1ABB-2483-4E38-8097-D0B9940E6B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPersonalAdditions", "MyPersonalAdditions\MyPersonalAdditions.csproj", "{D809FBB9-149C-4FA8-92CA-3C90F0402909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPersonalAdditions", "MyPersonalAdditions\MyPersonalAdditions.csproj", "{D809FBB9-149C-4FA8-92CA-3C90F0402909}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E80FBD9D-37FB-4A76-A72C-4015DAD41EC4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
