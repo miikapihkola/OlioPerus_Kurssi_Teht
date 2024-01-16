@@ -37,7 +37,7 @@ namespace Teht1_Book
             else if (id.Length > 5) 
                 id = "XXXXX";
         }
-        public string compareBookPrices(Book book)
+        public string CompareBookPrices(Book book)
         {
             if (book.price > this.price)
                 return book.title + " is more expensive.";

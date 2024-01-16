@@ -5,7 +5,7 @@ namespace Teht2_Car
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.startFunc();
+            PersonalFuncs.StartFunc();
 
             // Create cars
             Car car1 = new();
@@ -36,7 +36,7 @@ namespace Teht2_Car
             car2.ShowCarInfo();
 
 
-            PersonalFuncs.endFunc();
+            PersonalFuncs.EndFunc();
         }
         public static double askSpeedDif(string brand)
         {

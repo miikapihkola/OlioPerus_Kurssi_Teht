@@ -6,7 +6,7 @@ namespace Teht3_Company
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.startFunc();
+            PersonalFuncs.StartFunc();
 
             // Make companies
             Company company420 = new("Aa", "osAA", "000", 156, 30);
@@ -17,18 +17,18 @@ namespace Teht3_Company
             Company companyNegDesiN11 = new(); companyNegDesiN11.title = "Ee"; companyNegDesiN11.outcome = 62; companyNegDesiN11.expense = 70;
 
             // Check copy info
-            company420.printInfo();
-            company420Copy.printInfo();
+            company420.PrintInfo();
+            company420Copy.PrintInfo();
 
             // Print profit%
-            company420.profit();
-            company240.profit();
-            company120.profit();
-            company80.profit();
-            companyNegDesiN11.profit();
+            company420.Profit();
+            company240.Profit();
+            company120.Profit();
+            company80.Profit();
+            companyNegDesiN11.Profit();
 
 
-            PersonalFuncs.endFunc();
+            PersonalFuncs.EndFunc();
         }
 
     }

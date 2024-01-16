@@ -7,7 +7,7 @@
             
         }
 #pragma warning disable CA1416 // Validate platform compatibility 
-        public static void startFunc()
+        public static void StartFunc()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             string couldNot = "\nCould not automatically resize console window.\n";
@@ -25,7 +25,7 @@
             catch { Console.WriteLine($"{couldNot}{cont}"); Console.ReadLine(); Console.Clear(); }            
             Console.WriteLine();
         }
-        public static void endFunc()
+        public static void EndFunc()
         {
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();

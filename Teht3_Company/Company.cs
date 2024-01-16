@@ -42,7 +42,7 @@ namespace Teht3_Company
         }
 
         // Methods
-        public void profit()
+        public void Profit()
         {
             double profit = (this.outcome - this.expense) / this.expense * 100;
             string evaluation;
@@ -54,7 +54,7 @@ namespace Teht3_Company
 
             Console.WriteLine($"  Company '{this.title}' has profit% of {profit:F2} %.\n  This means it is doing {evaluation}.\n");
         }
-        public void printInfo()
+        public void PrintInfo()
         {
             Console.WriteLine($"  Title: {this.title}\n  Address: {this.address}\n  Phone #: {this.phone}\n  Outcome: {this.outcome}\n  Expense: {this.expense}\n");
         }

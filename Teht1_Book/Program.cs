@@ -5,7 +5,7 @@ namespace Teht1_Book
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.startFunc();
+            PersonalFuncs.StartFunc();
 
             int idCounter = 0;            
 
@@ -31,7 +31,7 @@ namespace Teht1_Book
             printMoreExpensiveBook(book3, book1);
 
             
-            PersonalFuncs.endFunc();
+            PersonalFuncs.EndFunc();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
@@ -42,7 +42,7 @@ namespace Teht1_Book
         public static void printMoreExpensiveBook(Book book1, Book book2)
         {
             Console.WriteLine("  Comparing following books | {0} || {1} |", book1.title, book2.title);
-            Console.WriteLine("  {0}\n", book1.compareBookPrices(book2));
+            Console.WriteLine("  {0}\n", book1.CompareBookPrices(book2));
         }
     }
 }
