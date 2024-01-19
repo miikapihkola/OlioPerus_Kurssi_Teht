@@ -71,11 +71,13 @@
             catch { Console.WriteLine($"{couldNot}{cont}"); Console.ReadLine(); Console.Clear(); }
             Console.WriteLine();
         }
+
         public static void EndMeth()
         {
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
+
         public static void PrintLine()
         {
             for (int i = 0; i < 75; i++) Console.Write("#");

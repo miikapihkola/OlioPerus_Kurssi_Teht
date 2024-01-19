@@ -27,6 +27,7 @@ namespace VrtTeht1_Employee
         }
 
         // Methods
+
         public void CompareSalary(Employee employee) 
         {
             if (this.salary > employee.salary) 
@@ -36,10 +37,12 @@ namespace VrtTeht1_Employee
             else 
                 Console.WriteLine($"  {this.position,-17} '{this.name}' and\n  {employee.position,-17} '{employee.name}'\n  have equal salary of {this.salary,8:F2} €/mo\n");
         }
+
         public void PrintEmployeeInfo() 
         {
             Console.WriteLine($"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €/mo\n");
         }
+
         private void AutomaticId(int idSeed)
         {
             id = string.Empty;
@@ -47,6 +50,7 @@ namespace VrtTeht1_Employee
             if (id.Length > 5) id = "XXXXX";
             while (id.Length < 5) id = "0" + id;
         }
+
         public override string? ToString()
         {
             return $"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €/mo\n";
