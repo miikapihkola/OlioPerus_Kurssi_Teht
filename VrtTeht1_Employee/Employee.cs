@@ -31,16 +31,27 @@ namespace VrtTeht1_Employee
         public void CompareSalary(Employee employee) 
         {
             if (this.salary > employee.salary) 
-                Console.WriteLine($"  {this.position,-17} {"'"+this.name+"'",-20} Salary: {this.salary,8:F2} €/mo\n  has {this.salary-employee.salary,8:F2} €/mo higher salary than\n  {employee.position,-17} '{employee.name}'\n");
+                Console.WriteLine($"  {this.position,-17} {"'"+this.name+"'",-20} Salary: {this.salary,8:F2} €/mo" +
+                    $"\n  has {this.salary-employee.salary,8:F2} €/mo higher salary than" +
+                    $"\n  {employee.position,-17} '{employee.name}'\n");
+
             else if (this.salary < employee.salary)
-                Console.WriteLine($"  {this.position,-17} {"'" + this.name + "'",-20} Salary: {this.salary,8:F2} €/mo\n  has {employee.salary - this.salary,8:F2} €/mo lower  salary than\n  {employee.position,-17} '{employee.name}'\n");
+                Console.WriteLine($"  {this.position,-17} {"'" + this.name + "'",-20} Salary: {this.salary,8:F2} €/mo" +
+                    $"\n  has {employee.salary - this.salary,8:F2} €/mo lower  salary than" +
+                    $"\n  {employee.position,-17} '{employee.name}'\n");
+
             else 
-                Console.WriteLine($"  {this.position,-17} '{this.name}' and\n  {employee.position,-17} '{employee.name}'\n  have equal salary of {this.salary,8:F2} €/mo\n");
+                Console.WriteLine($"  {this.position,-17} '{this.name}' and" +
+                    $"\n  {employee.position,-17} '{employee.name}'" +
+                    $"\n  have equal salary of {this.salary,8:F2} €/mo\n");
         }
 
         public void PrintEmployeeInfo() 
         {
-            Console.WriteLine($"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €/mo\n");
+            Console.WriteLine($"  Name:\t\t{this.name}" +
+                $"\n  Id:\t\t{this.Id}" +
+                $"\n  Position:\t{this.position}" +
+                $"\n  Salary:\t{this.salary:F2} €/mo\n");
         }
 
         private void AutomaticId(int idSeed)
@@ -53,7 +64,10 @@ namespace VrtTeht1_Employee
 
         public override string? ToString()
         {
-            return $"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €/mo\n";
+            return $"  Name:\t\t{this.name}" +
+                $"\n  Id:\t\t{this.Id}" +
+                $"\n  Position:\t{this.position}" +
+                $"\n  Salary:\t{this.salary:F2} €/mo\n";
         }
     }
 }
