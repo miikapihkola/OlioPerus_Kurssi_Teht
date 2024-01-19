@@ -11,16 +11,16 @@
 
             // Generate employees
             Employee[] employees = new Employee[MaxEmployees];
-            employees[idCounter] = new Employee(idCounter++) { name = "Aa Aa", position = "Project Manager", salary = 12500 };  // 1
-            employees[idCounter] = new Employee(idCounter++) { name = "Bb Bb", position = "Lead Artist", salary = 4000 };       // 2
-            employees[idCounter] = new Employee(idCounter++) { name = "Cc Cc", position = "Programer", salary = 2500 };         // 3
-            employees[idCounter] = new Employee(idCounter++) { name = "Dd Dd", position = "Digital Artist", salary = 3000 };    // 4
-            employees[idCounter] = new Employee(idCounter++) { name = "Ee Ee", position = "Community Manager", salary = 3000 }; // 5
-            employees[idCounter] = new Employee(idCounter++) { name = "Ff Ff", position = "Digital Artist", salary = 3100 };    // 6
-            employees[idCounter] = new Employee(idCounter++) { name = "Gg Gg", position = "Programer", salary = 3050 };         // 7
-            employees[idCounter] = new Employee(idCounter++) { name = "Hh Hh", position = "Programer", salary = 3100 };         // 8
-            employees[idCounter] = new Employee(idCounter++) { name = "Jj Jj", position = "Community Manager", salary = 2900 }; // 9
-            employees[idCounter] = new Employee(idCounter++) { name = "Ii Ii", position = "Programer", salary = 2500 };         // 10
+            employees[idCounter] = new Employee(idCounter++) { name = "Aa Aa", position = "Project Manager"     , salary = 12500 }; // 1
+            employees[idCounter] = new Employee(idCounter++) { name = "Bb Bb", position = "Lead Artist"         , salary = 4000 }; // 2
+            employees[idCounter] = new Employee(idCounter++) { name = "Cc Cc", position = "Programer"           , salary = 2500 }; // 3
+            employees[idCounter] = new Employee(idCounter++) { name = "Dd Dd", position = "Digital Artist"      , salary = 3000 }; // 4
+            employees[idCounter] = new Employee(idCounter++) { name = "Ee Ee", position = "Community Manager"   , salary = 3000 }; // 5
+            employees[idCounter] = new Employee(idCounter++) { name = "Ff Ff", position = "Digital Artist"      , salary = 3100 }; // 6
+            employees[idCounter] = new Employee(idCounter++) { name = "Gg Gg", position = "Programer"           , salary = 3050 }; // 7
+            employees[idCounter] = new Employee(idCounter++) { name = "Hh Hh", position = "Programer"           , salary = 3100 }; // 8
+            employees[idCounter] = new Employee(idCounter++) { name = "Jj Jj", position = "Community Manager"   , salary = 2900 }; // 9
+            employees[idCounter] = new Employee(idCounter++) { name = "Ii Ii", position = "Programer"           , salary = 2500 }; // 10
 
             // Info using Method
             PrintLine();
@@ -41,7 +41,7 @@
             foreach (Employee employee in employees)
             {                
                 if (employee == employees.Last())
-                { employee.CompareSalary(employees[0]); }
+                    employee.CompareSalary(employees[0]);
                 else
                     employee.CompareSalary(employees[++idCounter]);
             }
