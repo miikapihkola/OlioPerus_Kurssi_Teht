@@ -30,7 +30,11 @@ namespace Teht1_Book
             PrintMoreExpensiveBook(book2, book3);
             PrintMoreExpensiveBook(book3, book1);
 
-            
+            // ToString Test
+            Console.WriteLine(book1.ToString());
+            Console.WriteLine(book2.ToString());
+
+
             PersonalFuncs.EndFunc();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 

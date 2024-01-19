@@ -43,5 +43,10 @@ namespace Teht1_Book
                 return this.title + " is more expensive.";
             else return "Both books have same price.";
         }
+
+        public override string? ToString()
+        {
+            return $"{this.title}, {this.author}, {this.id}, {this.price}";
+        }
     }
 }
