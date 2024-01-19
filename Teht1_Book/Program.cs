@@ -5,7 +5,7 @@ namespace Teht1_Book
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.StartFunc();
+            PersonalFuncs.StartMeth();
 
             int idCounter = 0;            
 
@@ -30,12 +30,8 @@ namespace Teht1_Book
             PrintMoreExpensiveBook(book2, book3);
             PrintMoreExpensiveBook(book3, book1);
 
-            // ToString Test
-            Console.WriteLine(book1.ToString());
-            Console.WriteLine(book2.ToString());
-
-
-            PersonalFuncs.EndFunc();
+            
+            PersonalFuncs.EndMeth();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members

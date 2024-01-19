@@ -6,7 +6,7 @@ namespace Teht3_Company
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.StartFunc();
+            PersonalFuncs.StartMeth();
 
             // Make companies
             Company company420 = new("Aa", "osAA", "000", 156, 30);
@@ -28,7 +28,7 @@ namespace Teht3_Company
             companyNegDesiN11.Profit();
 
 
-            PersonalFuncs.EndFunc();
+            PersonalFuncs.EndMeth();
         }
 
     }

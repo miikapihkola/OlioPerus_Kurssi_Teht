@@ -14,15 +14,14 @@ namespace VrtTeht1_Employee
         public string position;
         public double salary;
         
-
         // Properties
         public string Id { get => id; }
 
         // Constructor
-        public Employee(int idCounter) 
+        public Employee(int idSeed) 
         {
             this.name = string.Empty;
-            AutomaticId(idCounter);
+            AutomaticId(idSeed);
             this.position = string.Empty;
             this.salary = 0;
         }
@@ -31,25 +30,26 @@ namespace VrtTeht1_Employee
         public void CompareSalary(Employee employee) 
         {
             if (this.salary > employee.salary) 
-                Console.WriteLine($"  {this.position,-17} {"'"+this.name+"'",-15}\tSalary: {this.salary:F2} €\n  has {this.salary-employee.salary:F2} € higher salary than\n  {employee.position,-17} '{employee.name}'\n");
+                Console.WriteLine($"  {this.position,-17} {"'"+this.name+"'",-20} Salary: {this.salary,8:F2} €/mo\n  has {this.salary-employee.salary,8:F2} €/mo higher salary than\n  {employee.position,-17} '{employee.name}'\n");
             else if (this.salary < employee.salary)
-                Console.WriteLine($"  {this.position,-17} {"'" + this.name + "'",-15}\tSalary: {this.salary:F2} €\n  has {employee.salary - this.salary:F2} € lower salary than\n  {employee.position,-17} '{employee.name}'\n");
+                Console.WriteLine($"  {this.position,-17} {"'" + this.name + "'",-20} Salary: {this.salary,8:F2} €/mo\n  has {employee.salary - this.salary,8:F2} €/mo lower  salary than\n  {employee.position,-17} '{employee.name}'\n");
             else 
-                Console.WriteLine($"  {this.position,-17} '{this.name}' and\n  {employee.position,-17} '{employee.name}'\n  have equal salary of {this.salary:F2} €\n");
+                Console.WriteLine($"  {this.position,-17} '{this.name}' and\n  {employee.position,-17} '{employee.name}'\n  have equal salary of {this.salary,8:F2} €/mo\n");
         }
         public void PrintEmployeeInfo() 
         {
-            Console.WriteLine($"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €\n");
+            Console.WriteLine($"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €/mo\n");
         }
-        private void AutomaticId(int idCounter)
+        private void AutomaticId(int idSeed)
         {
             id = string.Empty;
-            id = idCounter.ToString();
-            while (Id.Length < 5) id = "0" + id;
+            id = idSeed.ToString();
+            if (id.Length > 5) id = "XXXXX";
+            while (id.Length < 5) id = "0" + id;
         }
         public override string? ToString()
         {
-            return $"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €\n";
+            return $"  Name:\t\t{this.name}\n  Id:\t\t{this.Id}\n  Position:\t{this.position}\n  Salary:\t{this.salary:F2} €/mo\n";
         }
     }
 }

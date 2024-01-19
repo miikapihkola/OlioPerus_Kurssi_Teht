@@ -5,7 +5,7 @@ namespace Teht4_Book2
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.StartFunc();
+            PersonalFuncs.StartMeth();
 
             Book book1 = new() { name = "Aa", publisher = "PubA", Price = 25, Isbn = "1234567890" };
             Book book2 = new() { name = "Bb", publisher = "PubB", Price = 45, Isbn = "12345" };
@@ -31,7 +31,7 @@ namespace Teht4_Book2
             Console.WriteLine(book5.Isbn);
             Console.WriteLine(book6.Isbn);
 
-            PersonalFuncs.EndFunc();
+            PersonalFuncs.EndMeth();
         }
     }
 }

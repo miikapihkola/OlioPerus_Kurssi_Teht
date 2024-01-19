@@ -5,12 +5,12 @@ namespace Teht5_Author
     {
         static void Main(string[] args)
         {
-            PersonalFuncs.StartFunc();
+            PersonalFuncs.StartMeth();
 
             // txt
 
 
-            PersonalFuncs.EndFunc();
+            PersonalFuncs.EndMeth();
         }
     }
 }
