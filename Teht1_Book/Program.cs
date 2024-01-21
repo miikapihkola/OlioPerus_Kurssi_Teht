@@ -21,21 +21,24 @@ namespace Teht1_Book
             Book book3 = new("Book_C", "Auth_1", idCounter++, 19.99);
 
             // Retrieve info
-            PrintBookInfo(book1);
-            PrintBookInfo(book2);
-            PrintBookInfo(book3);
+            PrintBookInfoA(book1);
+            PrintBookInfoA(book2);
+            PrintBookInfoA(book3);
+
+            book1.PrintBookInfo();
+            book2.PrintBookInfo();
+            book3.PrintBookInfo();
 
             // Price Comparison
             PrintMoreExpensiveBook(book1, book2);
             PrintMoreExpensiveBook(book2, book3);
-            PrintMoreExpensiveBook(book3, book1);
+            PrintMoreExpensiveBook(book3, book1);            
 
-            
             PersonalFuncs.EndMeth();
         }
         // Piti lisätä "static" jotta homma toimii. mitä se tekee?, ilmetteesti ei tossa methodissa ei voi käyttää "new" 
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
-        public static void PrintBookInfo(Book book)
+        public static void PrintBookInfoA(Book book)
         {
             Console.WriteLine("  Title:\t{0}\n  Author:\t{1}\n  Price:\t{2} €\n  Inventory Id:\t{3}\n", book.title, book.author, book.price, book.id);
         }

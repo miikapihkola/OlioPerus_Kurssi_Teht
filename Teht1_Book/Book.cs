@@ -43,6 +43,10 @@ namespace Teht1_Book
                 return this.title + " is more expensive.";
             else return "Both books have same price.";
         }
+        public void PrintBookInfo()
+        {
+            Console.WriteLine("  Title:\t{0}\n  Author:\t{1}\n  Price:\t{2} €\n  Inventory Id:\t{3}\n", this.title, this.author, this.price, this.id);
+        }
 
         public override string? ToString()
         {
