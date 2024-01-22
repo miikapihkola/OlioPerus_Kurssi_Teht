@@ -1,4 +1,5 @@
 ﻿using MyPersonalAdditions;
+using Teht4_Book2;
 namespace Teht5_Author
 {
     internal class Program
@@ -7,8 +8,8 @@ namespace Teht5_Author
         {
             PersonalFuncs.StartMeth();
 
-            // txt
-
+            //txt
+            
 
             PersonalFuncs.EndMeth();
         }
