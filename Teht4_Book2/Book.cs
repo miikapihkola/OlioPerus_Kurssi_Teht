@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht4_Book2
+namespace Literature
 {
     public class Book
     {
