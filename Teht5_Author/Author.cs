@@ -20,11 +20,7 @@ namespace Teht5_Author
             get => book;
             set
             {
-                try
-                {
-                    if (value.Author == this.name) book = value;
-                }
-                catch { }
+                if (value != null && value.Author == this.name) book = value;
             }
         }
 

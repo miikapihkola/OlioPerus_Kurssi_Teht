@@ -7,8 +7,6 @@ namespace Teht5_Author
         static void Main(string[] args)
         {
             PersonalFuncs.StartMeth();
-
-            //txt
             const int maxbooks = 6;
             int idCounter = 0;
 
