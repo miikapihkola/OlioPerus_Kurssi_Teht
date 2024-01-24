@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyPersonalAdditions\MyPersonalAdditions.csproj" />
-	<ProjectReference Include="..\Teht5_Author\Teht5_Author.csproj" />
   </ItemGroup>
 
 </Project>

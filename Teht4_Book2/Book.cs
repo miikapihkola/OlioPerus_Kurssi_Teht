@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Teht4_Book2
 {
-    internal class Book
+    public class Book
     {
         // Field
         public string name;
@@ -67,7 +67,7 @@ namespace Teht4_Book2
             this.publisher = string.Empty;
             this.Price = 0;
             this.Isbn = string.Empty;
-            Theme = string.Empty;
+            Theme = "Romance";
         }        
 
         // Methods
@@ -105,6 +105,11 @@ namespace Teht4_Book2
         private static void Confirmation(string theme)
         {
             Console.WriteLine($"  Theme changed to {theme}.\n");
+        }
+
+        public override string? ToString()
+        {
+            return $"  Book info:\n  Title:\t{this.name}\n  Author:\t{this.Author}\n  Publisher:\t{this.publisher}\n  Price:\t{this.Price:F2} €\n  Theme:\t{Theme}\n  ISBN:\t\t{this.Isbn}\n";
         }
     }
 }

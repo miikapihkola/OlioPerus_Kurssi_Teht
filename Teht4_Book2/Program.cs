@@ -1,5 +1,4 @@
 ﻿using MyPersonalAdditions;
-using Teht5_Author;
 namespace Teht4_Book2
 {
     internal class Program
