@@ -13,7 +13,7 @@ namespace VrtTeht2_Vehicle
         protected string type;
         protected int doors;
 
-        // Constructor
+        // Constructors
         public Car(string engine, string type, int doors, string make, string model, int modelYear, double price) : base(make, model, modelYear, price)
         {
             this.engine = engine;
@@ -29,8 +29,21 @@ namespace VrtTeht2_Vehicle
         {
             base.PrintInformation();
             Console.WriteLine(  $"  Engine:\t{this.engine}\n" +
-                                $"  Type:\t{this.type}\n" +
+                                $"  Type:\t\t{this.type}\n" +
                                 $"  Doors:\t{this.doors}\n");
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override string? ToString()
+        {
+            return  base.ToString() +
+                    $"  Engine:\t{this.engine}\n" +
+                    $"  Type:\t\t{this.type}\n" +
+                    $"  Doors:\t{this.doors}\n";
         }
     }
 }

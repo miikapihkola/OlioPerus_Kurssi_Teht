@@ -10,11 +10,29 @@ namespace VrtTeht2_Vehicle
             StartMeth();
 
             int counter = 0;            
-            const int maxCars = 3;
+            const int maxCars = 2;
+            const int maxVehicles = 2;
 
+
+            Vehicle[] vehicles = new Vehicle[maxVehicles];
+            vehicles[counter++] = new Vehicle("make1", "model1", 2001, 12345.67);
+            vehicles[counter++] = new Vehicle("make2", "model2", 2002, 23456.78);
+
+
+            counter = 0;
             Car[] cars = new Car[maxCars];
-            Car cars[counter++] = new Car();
+            cars[counter++] = new Car("eng1", "type1", 4, "make3", "model3", 2003, 34567.89);
+            cars[counter++] = new Car("eng2", "type2", 2, "make4", "model4", 2004, 45678.90);
 
+            PrintLine();
+            foreach(Vehicle vehicle in vehicles) 
+                vehicle.PrintInformation();
+
+            PrintLine();
+            foreach (Car car in cars)
+                car.PrintInformation();
+
+            PrintLine();
 
             EndMeth();
         }

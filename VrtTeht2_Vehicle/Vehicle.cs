@@ -26,10 +26,18 @@ namespace VrtTeht2_Vehicle
         //Methods
         public virtual void PrintInformation()
         {
-            Console.WriteLine(  $"  Make:\t{this.make}\n" +
+            Console.WriteLine(  $"  Make:\t\t{this.make}\n" +
                                 $"  Model:\t{this.model}\n" +
                                 $"  Model Year:\t{this.modelYear}\n" +
-                                $"  Price:\t{this.price}");
+                                $"  Price:\t{this.price} €\n");
+        }
+
+        public override string? ToString()
+        {
+            return  $"  Make:\t\t{this.make}\n" +
+                    $"  Model:\t{this.model}\n" +
+                    $"  Model Year:\t{this.modelYear}\n" +
+                    $"  Price:\t{this.price} €\n";
         }
     }
 }
