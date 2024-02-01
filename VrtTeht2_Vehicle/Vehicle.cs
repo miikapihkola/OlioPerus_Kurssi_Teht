@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace VrtTeht2_Vehicle
 {
-    internal class Vehicle
+    internal abstract class Vehicle
     {
         // Field
         protected string make;
         protected string model;
         protected int modelYear;
         protected double price;
+
 
         // Constructors
         public Vehicle(string make, string model, int modelYear, double price)
@@ -23,7 +24,8 @@ namespace VrtTeht2_Vehicle
             this.price = price;
         }
 
-        //Methods
+
+        // Methods
         public virtual void PrintInformation()
         {
             Console.WriteLine(  $"  Make:\t\t{this.make}\n" +
@@ -32,6 +34,8 @@ namespace VrtTeht2_Vehicle
                                 $"  Price:\t{this.price} €\n");
         }
 
+
+        // Overrides
         public override string? ToString()
         {
             return  $"  Make:\t\t{this.make}\n" +

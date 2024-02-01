@@ -13,6 +13,7 @@ namespace VrtTeht2_Vehicle
         protected string type;
         protected int doors;
 
+
         // Constructors
         public Car(string engine, string type, int doors, string make, string model, int modelYear, double price) : base(make, model, modelYear, price)
         {
@@ -20,8 +21,6 @@ namespace VrtTeht2_Vehicle
             this.type = type;
             this.doors = doors;
         }
-
-        // Methods
 
 
         // Overrides
@@ -33,17 +32,29 @@ namespace VrtTeht2_Vehicle
                                 $"  Doors:\t{this.doors}\n");
         }
 
-        public override bool Equals(object? obj)
-        {
-            return base.Equals(obj);
-        }
-
         public override string? ToString()
         {
             return  base.ToString() +
                     $"  Engine:\t{this.engine}\n" +
                     $"  Type:\t\t{this.type}\n" +
                     $"  Doors:\t{this.doors}\n";
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Car car &&
+                   make == car.make &&
+                   model == car.model &&
+                   modelYear == car.modelYear &&
+                   price == car.price &&
+                   engine == car.engine &&
+                   type == car.type &&
+                   doors == car.doors;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(make, model, modelYear, price, engine, type, doors);
         }
     }
 }
