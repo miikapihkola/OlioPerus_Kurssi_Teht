@@ -1,5 +1,6 @@
 ﻿using MyPersonalAdditions;
-using Teht6_Rajapinta.Interfaces;
+using Teht6_Rajapinta.Classes;
+
 namespace Teht6_Rajapinta
 {
     internal class Program

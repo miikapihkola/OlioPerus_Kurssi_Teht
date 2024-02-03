@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Teht6_Rajapinta.Classes;
 using MyPersonalAdditions;
+using Teht6_Rajapinta.Interfaces;
 
-namespace Teht6_Rajapinta.Interfaces
+namespace Teht6_Rajapinta.Classes
 {
     internal class Store : IProducts, ICustomers
     {
@@ -21,8 +21,8 @@ namespace Teht6_Rajapinta.Interfaces
         {
             this.name = name;
             this.turnover = turnover;
-            this.products = new();
-            this.customers = new();
+            products = new();
+            customers = new();
         }
 
         // Methods
@@ -44,14 +44,14 @@ namespace Teht6_Rajapinta.Interfaces
             double totCount = 0;
 
             PersonalFuncs.PrintLine();
-            Console.WriteLine($"  ----- Store {this.name} has the following Products: ----- \n");
+            Console.WriteLine($"  ----- Store {name} has the following Products: ----- \n");
             foreach (Product product in products)
-            { 
+            {
                 Console.WriteLine(product.ToString());
                 totPrice += product.CalculateTotal();
                 totCount += product.count;
             }
-            Console.WriteLine(  $"  ----- Info -----\n\n" +
+            Console.WriteLine($"  ----- Info -----\n\n" +
                                 $"  Products:\t{products.Count}\n" +
                                 $"  Total Count:\t{totCount}\n" +
                                 $"  Total price:\t{totPrice:F2} €\n");
@@ -67,9 +67,9 @@ namespace Teht6_Rajapinta.Interfaces
         {
             double totBonus = 0;
             double totPrice = 0;
-            
+
             PersonalFuncs.PrintLine();
-            Console.WriteLine($"  ----- Store {this.name} has the following Customers: ----- \n");
+            Console.WriteLine($"  ----- Store {name} has the following Customers: ----- \n");
             foreach (Customer customer in customers)
             {
                 Console.WriteLine(customer.ToString());
@@ -77,7 +77,7 @@ namespace Teht6_Rajapinta.Interfaces
                 foreach (Product product in customer.products)
                     totPrice += product.CalculateTotal();
             }
-            Console.WriteLine(  $"  ----- Info -----\n\n" +
+            Console.WriteLine($"  ----- Info -----\n\n" +
                                 $"  Customers:\t{customers.Count}\n" +
                                 $"  Total price:\t{totPrice:F2} €\n" +
                                 $"  Total bonus:\t{totBonus:F2} €\n");
@@ -86,9 +86,9 @@ namespace Teht6_Rajapinta.Interfaces
         // Overrides
         public override string? ToString()
         {
-            return  $"  ----- Store Info -----\n\n" +
-                    $"  Name:\t\t{this.name}\n" +
-                    $"  Turnover:\t{this.turnover:F2} €\n" +
+            return $"  ----- Store Info -----\n\n" +
+                    $"  Name:\t\t{name}\n" +
+                    $"  Turnover:\t{turnover:F2} €\n" +
                     $"  Customers:\t{customers.Count}\n" +
                     $"  Products:\t{products.Count}\n";
         }
