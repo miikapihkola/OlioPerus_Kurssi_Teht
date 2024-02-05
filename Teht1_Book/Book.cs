@@ -7,7 +7,7 @@ using Teht1_Book;
 
 namespace Teht1_Book
 {
-    internal class Book
+    public class Book : IComparable<Book> // For "Teht7" added IComparable and changed to public
     {
         // Field
         public string title;
@@ -48,9 +48,25 @@ namespace Teht1_Book
             Console.WriteLine("  Title:\t{0}\n  Author:\t{1}\n  Price:\t{2} €\n  Inventory Id:\t{3}\n", this.title, this.author, this.price, this.id);
         }
 
-        public override string? ToString()
+        // Min to Max
+        public int CompareTo(Book? book) // Added during "Teht7"
         {
-            return $"{this.title}, {this.author}, {this.id}, {this.price}";
+            return price.CompareTo(book?.price);
+        }
+        /*
+        // Max to Min
+        public int CompareTo(Book? book)
+        {
+            return book.price.CompareTo(price);
+        }
+        */
+
+        public override string? ToString() // During "Teht7" refactored
+        {
+            return  $"  Title:\t{this.title}\n" +
+                    $"  Author:\t{this.author}\n" +
+                    $"  Id:\t\t{this.id}\n" +
+                    $"  Price:\t{this.price} €\n";
         }
     }
 }
