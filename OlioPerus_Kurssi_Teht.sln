@@ -24,9 +24,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VrtTeht1_Employee", "VrtTeh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VrtTeht2_Vehicle", "VrtTeht2_Vehicle\VrtTeht2_Vehicle.csproj", "{3E01A397-0CD2-4D4F-8F32-0D76FF400FF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht6_Rajapinta", "Teht6_Rajapinta\Teht6_Rajapinta.csproj", "{CD1F82C7-EC5D-4CA1-89C5-ABA826FC5F1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht6_Rajapinta", "Teht6_Rajapinta\Teht6_Rajapinta.csproj", "{CD1F82C7-EC5D-4CA1-89C5-ABA826FC5F1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht7_IComparable", "Teht7_IComparable\Teht7_IComparable.csproj", "{8C2896C2-688D-42D1-9D8A-0059F68AB959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht7_IComparable", "Teht7_IComparable\Teht7_IComparable.csproj", "{8C2896C2-688D-42D1-9D8A-0059F68AB959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht8_Monikulmiot", "Teht8_Monikulmiot\Teht8_Monikulmiot.csproj", "{1184A08B-C522-4C91-93F1-0FB32485C001}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{8C2896C2-688D-42D1-9D8A-0059F68AB959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C2896C2-688D-42D1-9D8A-0059F68AB959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C2896C2-688D-42D1-9D8A-0059F68AB959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1184A08B-C522-4C91-93F1-0FB32485C001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1184A08B-C522-4C91-93F1-0FB32485C001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1184A08B-C522-4C91-93F1-0FB32485C001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1184A08B-C522-4C91-93F1-0FB32485C001}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
