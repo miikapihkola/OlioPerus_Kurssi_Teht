@@ -30,6 +30,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht7_IComparable", "Teht7_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht8_Monikulmiot", "Teht8_Monikulmiot\Teht8_Monikulmiot.csproj", "{1184A08B-C522-4C91-93F1-0FB32485C001}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VrtTeht3_Vakuutukset", "VrtTeht3_Vakuutukset\VrtTeht3_Vakuutukset.csproj", "{9A126B64-4846-46FF-B163-E611479A2B19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{1184A08B-C522-4C91-93F1-0FB32485C001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1184A08B-C522-4C91-93F1-0FB32485C001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1184A08B-C522-4C91-93F1-0FB32485C001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A126B64-4846-46FF-B163-E611479A2B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A126B64-4846-46FF-B163-E611479A2B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A126B64-4846-46FF-B163-E611479A2B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A126B64-4846-46FF-B163-E611479A2B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
