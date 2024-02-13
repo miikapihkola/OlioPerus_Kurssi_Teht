@@ -14,22 +14,45 @@ namespace VrtTeht3_Vakuutukset
         // Methods
         public void AddInsurance(string animal, string name, bool isNeutered)
         {
-            throw new NotImplementedException();
+            insurances.Add(new(animal, name, isNeutered, GetFee(animal, isNeutered)));
         }
 
         public double GetFee(string species, bool isNeutererd)
         {
-            throw new NotImplementedException();
+            if (species.ToLower() == "koira")
+            {
+                if (isNeutererd)
+                    return 50;
+                else
+                    return 80;
+            }
+            else if (species.ToLower() == "kissa")
+            {
+                if (isNeutererd)
+                    return 40;
+                else
+                    return 60;
+            }
+            else return 0;
         }
 
         public void PrintInsurances()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"vakuutuksia yhteensä {insurances?.Count}\n\nvakuutukset:\n");
+            insurances?.ForEach(delegate
+            {
+                Console.WriteLine("  " + this.ToString() + "\n"); // EI TOIMI
+            });
         }
 
         public void FindInsurances(string species, bool isNeutered)
         {
-            throw new NotImplementedException();
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine("\nlöytyi:\n");
+            insurances?.ForEach(delegate
+            {
+                
+            });
         }
     }
 }
