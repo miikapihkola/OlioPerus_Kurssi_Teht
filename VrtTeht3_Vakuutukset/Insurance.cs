@@ -8,10 +8,19 @@ namespace VrtTeht3_Vakuutukset
 {
     public class Insurance
     {
+        // Field
         private string species;
         private string name;
         private bool neutered;
         private double fee;
+
+        // Properties
+        public string Species => species;
+        public string Name => name;
+        public bool Neutered => neutered;
+        public double Fee => fee;
+
+        // Constructor
         public Insurance(string animal, string name, bool isNeutered, double payment)
         {
             this.species = animal;
@@ -19,6 +28,8 @@ namespace VrtTeht3_Vakuutukset
             this.neutered = isNeutered;
             this.fee = payment;
         }
+
+        // Methods
         public string GetNeuteredInfo()
         {
             if (neutered)
@@ -30,6 +41,8 @@ namespace VrtTeht3_Vakuutukset
                 return "leikkaamaton";
             }
         }
+
+        // Overrides
         public override string? ToString()
         {
             return this.species + ": " + this.name + ", " + this.GetNeuteredInfo();

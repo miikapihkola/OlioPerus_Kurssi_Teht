@@ -38,20 +38,21 @@ namespace VrtTeht3_Vakuutukset
 
         public void PrintInsurances()
         {
-            Console.WriteLine($"vakuutuksia yhteensä {insurances?.Count}\n\nvakuutukset:\n");
-            insurances?.ForEach(delegate
+            Console.WriteLine($"vakuutuksia yhteensä {insurances?.Count}\n\nvakuutukset:\n");            
+            insurances?.ForEach(delegate(Insurance insurance)
             {
-                Console.WriteLine("  " + this.ToString() + "\n"); // EI TOIMI
-            });
+                Console.WriteLine($"  {insurance.ToString()}\n");
+            });            
         }
 
         public void FindInsurances(string species, bool isNeutered)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("\nlöytyi:\n");
-            insurances?.ForEach(delegate
+            insurances?.ForEach(delegate(Insurance insurance)
             {
-                
+                if (isNeutered == insurance.Neutered && insurance.Species == species)
+                    Console.WriteLine($"  {insurance.Species}: {insurance.Name}, vakuutusmaksu {insurance.Fee} €\n");
             });
         }
     }
