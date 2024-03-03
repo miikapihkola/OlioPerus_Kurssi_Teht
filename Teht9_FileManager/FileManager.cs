@@ -26,15 +26,21 @@ namespace Teht9_FileManager
         // Constructor
         public FileManager(string filePath)
         {
-            this.filePath = string.Empty;
+            //this.filePath = string.Empty;
+            this.filePath = filePath;
         }
 
         public string ReadWords()
         {
             string content = string.Empty;
-
-            content = ReadFile();
-
+            try
+            {
+                content = ReadFile();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             return content;
         }
 
@@ -46,7 +52,8 @@ namespace Teht9_FileManager
             if (!File.Exists(filePath))
             {
                 // Throw exception if file does not exists
-                throw new FileNotFoundException("File not available");
+                //throw new FileNotFoundException("File not available");
+                throw new WordListNotFoundException("File not available");
             }
 
             string directoryName = Path.GetDirectoryName(filePath);
