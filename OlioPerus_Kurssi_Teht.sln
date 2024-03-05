@@ -32,7 +32,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht8_Monikulmiot", "Teht8_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VrtTeht3_Vakuutukset", "VrtTeht3_Vakuutukset\VrtTeht3_Vakuutukset.csproj", "{9A126B64-4846-46FF-B163-E611479A2B19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht9_FileManager", "Teht9_FileManager\Teht9_FileManager.csproj", "{4D5592A5-4225-4543-B578-FFAF1E7FB41C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht9_FileManager", "Teht9_FileManager\Teht9_FileManager.csproj", "{4D5592A5-4225-4543-B578-FFAF1E7FB41C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam", "Exam\Exam.csproj", "{0E2B3C01-BD1C-44CA-A2D8-AC8238B656EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{4D5592A5-4225-4543-B578-FFAF1E7FB41C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D5592A5-4225-4543-B578-FFAF1E7FB41C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D5592A5-4225-4543-B578-FFAF1E7FB41C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2B3C01-BD1C-44CA-A2D8-AC8238B656EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2B3C01-BD1C-44CA-A2D8-AC8238B656EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2B3C01-BD1C-44CA-A2D8-AC8238B656EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2B3C01-BD1C-44CA-A2D8-AC8238B656EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
