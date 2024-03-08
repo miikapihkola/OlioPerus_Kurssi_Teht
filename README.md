@@ -9,3 +9,5 @@ Contents:<br><br>
   Kaikki tehtävät on yhdessä solutionissa, ja tämä on se solutioni<br><br>
 - Literature ja Literature.cs<br>
   En oo ihan varma mitä nää on, eivät näy mulla visual studiossa ja ovat kuiteski tyhjiä. Mutta varmuudeksi en poistanut niitä.
+- Exam<br>
+  Kurssitentti.
