@@ -8,6 +8,6 @@ Contents:<br><br>
 - OlioPerus_Kurssi_Teht.sln<br>
   Kaikki tehtävät on yhdessä solutionissa, ja tämä on se solutioni<br><br>
 - Literature ja Literature.cs<br>
-  En oo ihan varma mitä nää on, eivät näy mulla visual studiossa ja ovat kuiteski tyhjiä. Mutta varmuudeksi en poistanut niitä.
+  En oo ihan varma mitä nää on, eivät näy mulla visual studiossa ja ovat kuiteski tyhjiä. Mutta varmuudeksi en poistanut niitä.<br><br>
 - Exam<br>
-  Kurssitentti.
+  Kurssitentti.<br><br>
